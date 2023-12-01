@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="font-urbanist">
       <Navbar />
      <Surroundings/>
       <Footer />

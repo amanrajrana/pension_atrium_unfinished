@@ -28,7 +28,7 @@ const MealComponent = () => {
 
         {/* Right Part with Meal Details */}
         <div className="lg:w-1/2 w-full mt-4 mx-4 lg:mx-0 lg:mt-0">
-          <h2 className="text-2xl font-bold mb-2">Meals</h2>
+          <h2 className="text-2xl  font-bold mb-2">Meals</h2>
           <p className="text-gray-600">{text.meal_1}</p>
 
           <div className=" w-3/5 mt-2 lg:mt-4">

@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-black m-5  p-4 flex items-center md:justify-around justify-between font-urbanist">
+    <nav className="text-black m-5 font-semibold  p-4 flex items-center md:justify-around justify-between font-urbanist">
       {/* Left side with icon */}
       <div className="flex items-center">
         <Link href='/'>
@@ -52,16 +52,16 @@ const Navbar = () => {
       {/* Responsive menu for mobile */}
       {isMenuOpen && (
         <div className="absolute top-8 p-4 right-0 mt-2 w-40 bg-white border border-gray-300 rounded-md shadow-lg animate-slide-in">
-          <Link href='/accomodation' className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+          <Link href='/accomodation' className="block px-4 py-2 text-black">
             {content.nav_accom}
           </Link>
-          <Link href='/services' className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+          <Link href='/services' className="block px-4 py-2 text-black">
             {content.nav_ser}
           </Link>
-          <Link href='/surroundings' className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+          <Link href='/surroundings' className="block px-4 py-2 text-black">
             {content.nav_surr}
           </Link>
-          <Link href='/contact' className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+          <Link href='/contact' className="block px-4 py-2 text-black">
             {content.nav_contact}
           </Link>
           <LanguageDrop />

@@ -40,8 +40,8 @@ module.exports = {
           fontWeight:'400'
         }],
 
-        '2xl': ['21px', {
-          lineHeight: '25.2px',
+        '2xl': ['25px', {
+          lineHeight: '27.2px',
         }],
         '2xlg': ['25px', {
           lineHeight: '30px',

@@ -7,7 +7,7 @@ import React from "react";
 import ContactUs from "@/Components/ContactUs";
 
 export default function Page() {
-    return <div>
+    return <div className="font-urbanist">
    <Navbar/>
    <ContactUs/>
    <Footer/>

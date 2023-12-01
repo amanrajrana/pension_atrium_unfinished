@@ -7,7 +7,7 @@ import text from '../../public/text.json'
 import Information from "@/Components/Information";
 
 export default function Page() {
-    return <div>
+    return <div className="font-urbanist">
    <Navbar/>
    <Tables/>
   <Floor heading="Ground Floor" desc={text.first_floor}/>
