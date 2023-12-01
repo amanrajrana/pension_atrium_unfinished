@@ -31,7 +31,7 @@ const ContactUs = () => {
         
         </div>
 
-        <form className="h-full flex flex-col justify-between">
+        <form className="h-full flex flex-col justify-between" id="form">
         <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm  mb-2"

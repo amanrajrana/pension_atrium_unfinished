@@ -7,20 +7,6 @@ import Image from 'next/image';
 import Img from '../public/images/ImageApi';
 import text from '../public/text.json';
 
-const CustomDatePickerInput = ({ value, onChange, placehold }) => (
-  <div className="relative">
-    <input
-      type="text"
-      value={value}
-      onChange={onChange}
-      placeholder={placehold}
-      className="w-full p-2 pl-3 pr-40 font-light border border-gray-300 placeholder-placeColor rounded focus:outline-none"
-    />
-    <span className="absolute inset-y-0 right-3 flex items-center pl-3 text-gray-500">
-      <Image src={Img.home_vectors[2]} width={17} height={17} className="h-auto w-4" alt="image" />
-    </span>
-  </div>
-);
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState(null);
@@ -47,10 +33,15 @@ const Hero = () => {
               Check-in:
             </label>
             <DatePicker
-              selected={checkInDate}
-              onChange={(date) => setCheckInDate(date)}
+              selected={checkOutDate}
+              onChange={(date) => setCheckOutDate(date)}
               dateFormat="dd/MM/yyyy"
-              customInput={<CustomDatePickerInput placehold="Check-inDate" />}
+              placeholderText="Check-inDate"
+              calendarClassName="p-0"
+              showIcon
+              calendarIconClassname="absolute !pt-2.5 right-0"
+             
+              className="w-full !pr-32 lg:!pr-20    font-left !py-1.5 !pl-2 items-center font-light border border-gray-300 placeholder-placeColor rounded focus:outline-none"
             />
           </div>
 
@@ -63,7 +54,12 @@ const Hero = () => {
               selected={checkOutDate}
               onChange={(date) => setCheckOutDate(date)}
               dateFormat="dd/MM/yyyy"
-              customInput={<CustomDatePickerInput placehold="Check-outDate" />}
+              placeholderText="Check-outDate"
+              calendarClassName="p-0"
+              showIcon
+              calendarIconClassname="absolute !pt-2.5 right-0"
+             
+              className="w-full !pr-32 lg:!pr-20    font-left !py-1.5 !pl-2 items-center font-light border border-gray-300 placeholder-placeColor rounded focus:outline-none"
             />
           </div>
         </div>

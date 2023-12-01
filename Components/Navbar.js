@@ -64,6 +64,7 @@ const Navbar = () => {
           <Link href='/contact' className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
             {content.nav_contact}
           </Link>
+          <LanguageDrop />
           <button className="flex gap-1 ml-4 mt-2 block text-white text-xs py-2 px-2 rounded bg-gradient-to-r from-btngrad_1 to-btngrad_2 items-center font-urbanist">
             <Image src={images.home_vectors[1]} width={12} height={12} alt='image' />
             {content.nav_btn}
