@@ -1,65 +1,52 @@
-'use client'
-import React, { useEffect, useState } from "react";
-import imgAPI from "@/public/images/ImageApi";
-import Image from "next/image";
+import { IoIosWifi } from "react-icons/io";
+import { MdBed } from "react-icons/md";
+import { LuParkingSquare } from "react-icons/lu";
+import { FaBusAlt, FaWheelchair } from "react-icons/fa";
+import { RiGroup2Line } from "react-icons/ri";
+import { PiTelevisionBold } from "react-icons/pi";
 
 const Amenities = () => {
-  const data = [
-    { icon: imgAPI.home_vectors[4], text: "Free wi-fi" },
-    { icon: imgAPI.home_vectors[5], text: "Garden with playground" },
-    { icon: imgAPI.home_vectors[6], text: "Beds from 200 Kč (8 €) per night" },
-    { icon: imgAPI.home_vectors[7], text: "Free parking" },
-    { icon: imgAPI.home_vectors[8], text: "Wheelchair accessible" },
-    { icon: imgAPI.home_vectors[9], text: "Close to the bus terminal and train station." },
-    { icon: imgAPI.home_vectors[10], text: "Group discounts and long stay discounts" },
-    { icon: imgAPI.home_vectors[11], text: "Kitchen and meeting room with TV" },
+  const icon_size = 50; // size of the icons
+
+  // * Data for the amenities section
+  const AMENITIES_DATA = [
+    { icon: <IoIosWifi size={icon_size} />, text: "Free wi-fi" },
+    { icon: <IoIosWifi size={icon_size} />, text: "Garden with playground" },
+    {
+      icon: <MdBed size={icon_size} />,
+      text: "Beds from 200 Kč (8€) per night",
+    },
+    { icon: <LuParkingSquare size={icon_size} />, text: "Free parking" },
+    { icon: <FaWheelchair size={icon_size} />, text: "Wheelchair accessible" },
+    {
+      icon: <FaBusAlt size={icon_size} />,
+      text: "Close to the bus terminal and train station.",
+    },
+    {
+      icon: <RiGroup2Line size={icon_size} />,
+      text: "Group discounts and long stay discounts",
+    },
+    {
+      icon: <PiTelevisionBold size={icon_size} />,
+      text: "Kitchen and meeting room with TV",
+    },
   ];
 
-  const [itemsPerRow, setItemsPerRow] = useState(4);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setItemsPerRow(window.innerWidth < 1000 ? 2 : 4);
-    };
-
-    // Initial setup
-    handleResize();
-
-    // Event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  // Split the data into rows
-  const rows = [];
-  for (let i = 0; i < data.length; i += itemsPerRow) {
-    rows.push(data.slice(i, i + itemsPerRow));
-  }
-
   return (
-    <div className="container mx-auto my-16 text-center">
-      <h1 className="text-2x font-bold mb-12">Our Amenities</h1>
-
-      {rows.map((row, rowIndex) => (
-        <div
-          key={rowIndex}
-          className={`flex gap-10 lg:10 flex-wrap justify-center mb-4 ${
-            rowIndex > 0 ? "mt-8" : "" // Add top margin for rows after the first one
-          }`}
-        >
-          {row.map((item, index) => (
-            <div key={index} className="w-40 flex-col justify-center p-4">
-              <Image width={70} height={46} src={item.icon} alt={`Icon ${index + rowIndex * itemsPerRow + 1}`} className="mx-auto w-auto  h-auto" />
-              <p className="mx-auto text-center font-bold">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
+    <section className="my-8 py-8 flex flex-col justify-center items-center px-2">
+      <h2 className="text-4xl font-semibold text-center">Our Amenities</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-8 w-full max-w-4xl">
+        {AMENITIES_DATA.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-center text-lg gap-2 font-semibold text-slate-600 flex-col max-w-[200px] text-center mx-auto"
+          >
+            <div className="text-indigo-900">{item.icon}</div>
+            {item.text}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
