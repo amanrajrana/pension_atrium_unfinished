@@ -50,11 +50,11 @@ const Navbar = () => {
         <div
           className={`${
             isNavOpen
-              ? "flex absolute h-screen items-center justify-center top-0 left-0 w-screen bg-white flex-col -z-10"
+              ? "flex absolute h-screen items-center justify-center top-0 left-0 w-screen bg-white flex-col -z-10 overflow-y-auto"
               : "hidden"
           }  lg:z-0 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:justify-between lg:relative lg:top-auto lg:left-auto lg:bg-transparent w-full`}
         >
-          <div className="flex flex-1 flex-col gap-y-8 w-full max-w-xs lg:max-w-full p-4 lg:flex-row gap-x-8">
+          <div className="flex relative top-24 flex-1 lg:top-auto flex-col gap-y-8 w-full max-w-xs lg:max-w-full p-4 lg:flex-row gap-x-8">
             {NAV__ITEMS.map(({ label, to }, index) => (
               <Link key={index} href={to}>
                 {label}
