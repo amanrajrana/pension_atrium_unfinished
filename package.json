@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "hamburger-react": "^2.5.0",
     "next": "14.0.3",
     "react": "^18",
     "react-datepicker": "^4.21.0",

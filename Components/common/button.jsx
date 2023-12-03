@@ -20,7 +20,7 @@ const Button = ({ children, variant }) => {
 
   return (
     <button
-      className={`${styles} flex justify-center items-center w-max py-3 px-4 rounded-lg font-urbanist`}
+      className={`${styles} w-full flex justify-center items-center min-w-max py-3 px-4 rounded-lg font-urbanist`}
     >
       {children}
     </button>

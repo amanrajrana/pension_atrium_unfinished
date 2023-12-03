@@ -12,7 +12,7 @@ const Hero = () => {
   const [checkOutDate, setCheckOutDate] = useState(null);
 
   return (
-    <section className="max-w-screen-xl mx-auto">
+    <section className="max-w-screen-xl mx-auto mt-28">
       <div className="flex flex-col items-center justify-between lg:flex-row">
         {/* Left side */}
         <div className="flex-1 p-4 max-w-lg">

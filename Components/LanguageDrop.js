@@ -25,7 +25,7 @@ const LanguageDrop = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       {/* Dropdown Button */}
       <button
         onClick={toggleDropdown}
