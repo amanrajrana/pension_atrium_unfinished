@@ -1,10 +1,14 @@
-'use client'
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const Dropdown = ({ value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const options = [' Short-term stay (1-6 days)', 'Long-term stay (1-10 days)', 'Long-term stay (1-20 days)'];
+  const options = [
+    " Short-term stay (1-6 days)",
+    "Long-term stay (1-10 days)",
+    "Long-term stay (1-20 days)",
+  ];
 
   const handleSelect = (option) => {
     onChange(option);

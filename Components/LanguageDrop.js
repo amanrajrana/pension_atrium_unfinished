@@ -2,35 +2,22 @@
 import React, { useState } from "react";
 import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import Button from "./common/button";
 
 const LanguageDrop = () => {
-    const dropdown =[
-       
-     
-    ]
+  const dropdown = [];
   const languages = [
-    
-    { code: 'en', name: "English", flag: imgAPI.home_vectors[22] },
-    { code: 'cz', name: "CZECH", flag: imgAPI.home_vectors[23] },
-
-    
-
-    
+    { code: "EN", name: "English", flag: imgAPI.home_vectors[22] },
+    { code: "CZ", name: "CZECH", flag: imgAPI.home_vectors[23] },
   ];
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
-  
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
     setDropdownOpen(false);
-  
-    
-   
-   
-    
-
-    
   };
 
   const toggleDropdown = () => {
@@ -42,37 +29,34 @@ const LanguageDrop = () => {
       {/* Dropdown Button */}
       <button
         onClick={toggleDropdown}
-        className="bg-dropdown border border-gray-300 rounded px-2 py-3 w-full justify-between text-xs flex items-center"
+        className="bg-dropdown rounded-lg px-3 py-3 w-full justify-between text-lg gap-2 flex items-center"
       >
         <Image
-          width="0"
-          height="0"
-          sizes="100vw"
+          width="24"
+          height="24"
           src={selectedLanguage.flag}
-          alt="icon"
-          className="w-4 h-4 mr-2"
+          alt="Language Flag"
+          className="rounded-full"
         />
-        <span>{selectedLanguage.code}</span>
-        <span className="ml-2">&#9660;</span>
+        {selectedLanguage.code}
+        <MdKeyboardArrowDown />
       </button>
 
       {/* Dropdown Options */}
       {dropdownOpen && (
         <div className="absolute top-full left-0 mt-1 w-full bg-white border border-gray-300 rounded">
-          {languages.map((languages) => (
+          {languages.map((languages, index) => (
             <div
-              key={languages.code}
+              key={index}
               onClick={() => handleLanguageChange(languages)}
-              className="block pr-2 pl-1 py-2 text-xs leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+              className="block p-3 text-lg leading-7 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 cursor-pointer"
             >
-              <div className="flex items-center ">
+              <div className="flex items-center gap-2">
                 <Image
-                  width="0"
-                  height="0"
-                  sizes="100vw"
+                  width={24}
+                  height={24}
                   src={languages.flag}
                   alt={`Flag for ${languages.name}`}
-                  className="w-4 h-4 mr-2"
                 />
                 <span>{languages.code}</span>
               </div>
