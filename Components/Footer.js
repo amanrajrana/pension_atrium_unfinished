@@ -1,66 +1,79 @@
 // components/Footer.js
-import React from "react";
 import text from "../public/text.json";
 import imgAPI from "@/public/images/ImageApi";
-import FooterColumn from "./FooterColumn";
 import Image from "next/image";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer w-full text-white py-8">
-      <div className="container mx-auto flex flex-col md:flex-row gap-y-5 justify-center items-center">
+    <footer className="bg-footer w-full text-white py-4 pt-12 font-urbanist">
+      <div className="max-w-screen-xl grid sm:grid-cols-2 md:grid-cols-3 lg:mx-auto mx-4 space-y-12 md:space-y-0">
         {/* First Column */}
-        <div className="md:w-1/4  justify-center w-full  mx-auto p-4 text-center md:text-left">
-          <div className="mb-4 ">
-            {/* Logo */}
-            <Image
-              width={168}
-              height={76}
-              src={imgAPI.home_vectors[12]}
-              alt="PENSION ATRIUM logo"
-              className="mb-2 mx-auto md:mx-0"
-            />
-          </div>
-          <div className="flex items-center justify-center md:justify-start">
-            {/* Icons */}
-            <div className="mr-2">
-              <Image
-                width={35}
-                height={35}
-                src={imgAPI.home_vectors[13]}
-                alt="Icon 1"
-                className="w-8 h-8"
-              />
-            </div>
-            <div>
-              <Image
-                width={35}
-                height={35}
-                src={imgAPI.home_vectors[14]}
-                alt="Icon 2"
-                className="w-8 h-8"
-              />
-            </div>
+        <div className="sm:col-span-2 md:col-span-1">
+          <Image
+            width={168}
+            height={76}
+            src={imgAPI.SVG__ICONS.LOGO_WITH_TAG}
+            alt="PENSION ATRIUM logo"
+            className="mb-4"
+          />
+
+          {/* Social media icons */}
+          <div className="flex gap-4">
+            <a
+              href="https://facebook.com"
+              className="border p-2.5 rounded-full"
+              target="_blank"
+              rel="noReferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://instagram.com"
+              className="p-2.5 rounded-full bg-gradient-to-r from-textgrad_1 to-textgrad_2"
+              target="_blank"
+              rel="noReferrer"
+            >
+              <FaInstagram />
+            </a>
           </div>
         </div>
 
         {/* Second Column */}
-        <FooterColumn
-          heading="Contact Info"
-          row1Icon={imgAPI.home_vectors[15]}
-          row1Text={text.footer_loc}
-          row2Icon={imgAPI.home_vectors[16]}
-          row2Text={text.footer_tel}
-        />
+        <div className="text-sm space-y-4">
+          <h3 className="font-semibold mb-6">Contact Info</h3>
+          <div className="flex gap-2 items-center text-slate-200 hover:text-white">
+            <FaLocationDot size={22} />
+            <span>{text.footer_loc}</span>
+          </div>
+
+          <div className="flex gap-2 items-center text-slate-200 hover:text-white">
+            <BiSolidPhoneCall size={22} />
+            <a href={`tel:${text.footer_tel}`}>{text.footer_tel}</a>
+          </div>
+        </div>
 
         {/* Third Column */}
-        <FooterColumn
-          heading="Emails"
-          row1Icon={imgAPI.home_vectors[17]}
-          row1Text={text.mail_1}
-          row2Icon={imgAPI.home_vectors[17]}
-          row2Text={text.mail_2}
-        />
+        <div className="text-sm space-y-4">
+          <h3 className="font-semibold mb-6">Emails</h3>
+          <div className="flex gap-2 items-center text-slate-200 hover:text-white">
+            <MdEmail size={22} />
+            <a href={`mailto:${text.mail_1}`}>{text.mail_1}</a>
+          </div>
+
+          <div className="flex gap-2 items-center text-slate-200 hover:text-white">
+            <MdEmail size={22} />
+            <a href={`mailto:${text.mail_2}`}>{text.mail_2}</a>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-t-slate-500 mt-12">
+        <p className="text-center text-xs text-slate-500 mt-4">
+          © 2023 Pension Atrium. All rights reserved.
+        </p>
       </div>
     </footer>
   );

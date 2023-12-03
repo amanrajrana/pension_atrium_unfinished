@@ -8,8 +8,8 @@ import Button from "./common/button";
 const LanguageDrop = () => {
   const dropdown = [];
   const languages = [
-    { code: "EN", name: "English", flag: imgAPI.home_vectors[22] },
-    { code: "CZ", name: "CZECH", flag: imgAPI.home_vectors[23] },
+    { code: "EN", name: "English", flag: imgAPI.home_vectors.US_FLAG },
+    { code: "CZ", name: "CZECH", flag: imgAPI.home_vectors.CZ_FLAG },
   ];
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 

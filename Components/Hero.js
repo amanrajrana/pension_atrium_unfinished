@@ -61,12 +61,11 @@ const Hero = () => {
               />
             </div>
           </div>
-          <button className="w-full py-3 px-4 rounded bg-gradient-to-r from-btngrad_1 to-btngrad_2 text-white text-xs flex items-center justify-center gap-1 font-urbanist">
+          <button className="w-full py-3 px-4 rounded bg-gradient-to-r from-btngrad_1 to-btngrad_2 bg-opacity-90 hover:bg-opacity-100 text-white text-sm font-semibold flex items-center justify-center gap-1 font-urbanist">
             <Image
-              src={Img.home_vectors[1]}
-              width={12}
-              height={12}
-              className="h-3.5 w-3.5"
+              src={Img.SVG__ICONS.B_ICON}
+              width={18}
+              height={18}
               alt="image"
             />
             {text.nav_btn}
@@ -78,7 +77,7 @@ const Hero = () => {
           <Image
             width={570}
             height={564}
-            src={Img.home_vectors[3]}
+            src={Img.home_vectors.card}
             alt="card"
             className="rounded h-full w-full "
           />

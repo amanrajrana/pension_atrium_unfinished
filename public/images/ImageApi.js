@@ -1,30 +1,9 @@
 const imgAPI = {
-  home_vectors: [
-    "/images/vectors/logo.svg",
-    "/images/vectors/icon.png",
-    "/images/vectors/Union.png",
-    "/images/vectors/Card.png",
-    "/images/vectors/wifi.png",
-    "/images/vectors/play.png",
-    "/images/vectors/room.png",
-    "/images/vectors/park.png",
-    "/images/vectors/chair.png",
-    "/images/vectors/bus.png",
-    "/images/vectors/group.png",
-    "/images/vectors/tv.png",
-    "/images/vectors/logo_with_tag.svg",
-    "/images/vectors/fb.png",
-    "/images/vectors/insta.png",
-    "/images/vectors/location.png",
-    "/images/vectors/call.png",
-    "/images/vectors/sms.png",
-    "/images/vectors/icon_menu.png",
-    "/images/vectors/location2.png",
-    "/images/vectors/call2.png",
-    "/images/vectors/sms2.png",
-    "/images/vectors/language_flag-1.png",
-    "/images/vectors/cz_flag.png",
-  ],
+  home_vectors: {
+    card: "/images/vectors/Card.png",
+    US_FLAG: "/images/vectors/language_flag-1.png",
+    CZ_FLAG: "/images/vectors/cz_flag.png",
+  },
   home_img: [
     "/images/gallery/1-home.png",
     "/images/gallery/2-home.png",
@@ -83,7 +62,9 @@ const imgAPI = {
     "/images/gallery/sur5_resp.png",
   ],
   SVG__ICONS: {
-    B_ICON: "/images/svg-icons/b-icon.svg",
+    B_ICON: "/images/svg/b-icon.svg",
+    LOGO: "/images/svg/logo.svg",
+    LOGO_WITH_TAG: "/images/svg/logo-with-tag.svg",
   },
 };
 export default imgAPI;

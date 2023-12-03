@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <Link href="/">
           <Image
-            src={images.home_vectors[0]}
+            src={images.SVG__ICONS.LOGO}
             alt="PENSION ATRIUM logo"
             width={181}
             height={55}
