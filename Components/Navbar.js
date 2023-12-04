@@ -8,6 +8,7 @@ import Image from "next/image";
 import LanguageDrop from "./LanguageDrop";
 import Button from "./common/button";
 import Hamburger from "hamburger-react";
+import { BSymbolIcon } from "./svg/icons";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -94,15 +95,10 @@ const RightSide = () => {
 
       {/* Button */}
       <Button variant="gradient">
-        <div className="flex gap-2 text-lg">
-          <Image
-            src={images.SVG__ICONS.B_ICON}
-            width={17}
-            height={17}
-            alt="image"
-          />
+        <span className="flex items-center gap-2 text-lg">
+          <BSymbolIcon />
           {content.nav_btn}
-        </div>
+        </span>
       </Button>
     </div>
   );

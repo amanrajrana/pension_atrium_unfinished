@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Image from "next/image";
 import Img from "../public/images/ImageApi";
 import text from "../public/text.json";
+import { BSymbolIcon } from "./svg/icons";
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState(null);
@@ -62,12 +63,7 @@ const Hero = () => {
             </div>
 
             <button className="w-full py-3 px-4 rounded bg-gradient-to-r from-btngrad_1 to-btngrad_2 bg-opacity-90 hover:bg-opacity-100 text-white text-sm font-semibold flex items-center justify-center gap-1 font-urbanist col-span-2">
-              <Image
-                src={Img.SVG__ICONS.B_ICON}
-                width={18}
-                height={18}
-                alt="image"
-              />
+              <BSymbolIcon />
               {text.nav_btn}
             </button>
           </div>
