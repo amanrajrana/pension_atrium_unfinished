@@ -9,9 +9,17 @@ import LanguageDrop from "./LanguageDrop";
 import Button from "./common/button";
 import Hamburger from "hamburger-react";
 import { BSymbolIcon } from "./svg/icons";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const location = usePathname();
+
+  // Make isNavOpen false when route changes
+  React.useEffect(() => {
+    setIsNavOpen(false);
+  }, [location]);
 
   const NAV__ITEMS = [
     {
