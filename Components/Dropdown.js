@@ -5,7 +5,7 @@ const Dropdown = ({ value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const options = [
-    " Short-term stay (1-6 days)",
+    "Short-term stay (1-6 days)",
     "Long-term stay (1-10 days)",
     "Long-term stay (1-20 days)",
   ];
@@ -20,7 +20,7 @@ const Dropdown = ({ value, onChange }) => {
       {/* Dropdown Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-white border border-gray-300 rounded px-2 py-3 w-full justify-between text-xs flex items-center"
+        className="bg-white border border-gray-300 rounded-md px-2 py-3 w-full justify-between text-sm flex items-center"
       >
         {value}
         <span className="ml-2">&#9660;</span>

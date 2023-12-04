@@ -1,13 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import imgAPI from "@/public/images/ImageApi";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { LuSoup } from "react-icons/lu";
 
-
-const Element = ({ image1, text1, text2 }) => {
+const Element = ({ icon, text1, text2 }) => {
   return (
-    <div className="flex  justify-between mb-4">
+    <div className="flex  justify-between mb-4 items-center">
       <div className="mr-2 flex gap-4 items-center">
-        <Image src={image1} height={21} width={21} sizes="100vh" alt="icon" className="h-6 w-6" /> {/*  */}
+        <span className="text-customblue text-2xl">{icon}</span>
         <p className="text-sm">{text1}</p>
       </div>
       <div className="items-center">
@@ -17,7 +15,7 @@ const Element = ({ image1, text1, text2 }) => {
   );
 };
 
-const Meal = ({mealText}) => {
+const Meal = ({ mealText }) => {
   return (
     <div className=" w-auto rounded p-2 ">
       {/* Section 1 */}
@@ -25,20 +23,12 @@ const Meal = ({mealText}) => {
         <h3 className="text-sm text-center  mb-6">{mealText}</h3>
         <div>
           <Element
-            image1={imgAPI.accom_vectors[4]}
+            icon={<IoFastFoodOutline />}
             text1="Breakfast"
             text2="80 Kč"
           />
-          <Element
-            image1={imgAPI.accom_vectors[5]}
-            text1="Half board"
-            text2="160 Kč"
-          />
-          <Element
-            image1={imgAPI.accom_vectors[5]}
-            text1="Full board"
-            text2="240 Kč"
-          />
+          <Element icon={<LuSoup />} text1="Half board" text2="160 Kč" />
+          <Element icon={<LuSoup />} text1="Full board" text2="240 Kč" />
         </div>
       </div>
     </div>
