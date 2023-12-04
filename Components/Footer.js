@@ -9,7 +9,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer w-full text-white py-4 pt-12 font-urbanist">
+    <footer className="bg-footer w-full text-white py-4 pt-16 font-urbanist">
       <div className="max-w-screen-xl grid sm:grid-cols-2 md:grid-cols-3 lg:mx-auto mx-4 space-y-12 md:space-y-0">
         {/* First Column */}
         <div className="sm:col-span-2 md:col-span-1">
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-t-slate-500 mt-12">
+      <div className="border-t border-t-slate-500 mt-10">
         <p className="text-center text-xs text-slate-500 mt-4">
           © 2023 Pension Atrium. All rights reserved.
         </p>

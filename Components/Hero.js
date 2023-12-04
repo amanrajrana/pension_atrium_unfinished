@@ -12,18 +12,18 @@ const Hero = () => {
   const [checkOutDate, setCheckOutDate] = useState(null);
 
   return (
-    <section className="max-w-screen-xl mx-auto mt-28 px-4">
+    <section className="max-w-screen-2xl mx-auto mt-16 md:mt-20 px-4 lg:px-10">
       <div className="grid lg:grid-cols-2 gap-y-8">
         {/* Left side */}
-        <div className="flex-1 p-4 lg:max-w-lg">
-          <h2 className="text-3xl text-center lg:text-left font-bold mb-8">
+        <div className="flex-1 lg:max-w-lg flex justify-center flex-col">
+          <h2 className="text-2x md:text-3xl text-center lg:text-left font-bold mb-8">
             <span>Discover </span>
             <span className="bg-gradient-to-r from-textgrad_1 to-textgrad_2 inline-block text-transparent bg-clip-text">
               Trutnov
             </span>
             &#39;s Hidden Gem
           </h2>
-          <p className="text-gray-600 mb-12 text-center lg:text-left text-2xl">
+          <p className="text-gray-600 mb-12 text-center lg:text-left text-sm md:text-2xl">
             {text.hero_subtext}
           </p>
           <div className="grid grid-cols-2 max-w-max gap-4 mx-auto">

@@ -3,15 +3,15 @@ import { MdBed } from "react-icons/md";
 import { LuParkingSquare } from "react-icons/lu";
 import { FaBusAlt, FaWheelchair } from "react-icons/fa";
 import { RiGroup2Line } from "react-icons/ri";
-import { PiTelevisionBold } from "react-icons/pi";
+import { PlayIcon, TvIcon } from "@/Components/svg/icons";
 
 const Amenities = () => {
-  const icon_size = 50; // size of the icons
+  const icon_size = 55; // size of the icons
 
   // * Data for the amenities section
   const AMENITIES_DATA = [
     { icon: <IoIosWifi size={icon_size} />, text: "Free wi-fi" },
-    { icon: <IoIosWifi size={icon_size} />, text: "Garden with playground" },
+    { icon: <PlayIcon />, text: "Garden with playground" },
     {
       icon: <MdBed size={icon_size} />,
       text: "Beds from 200 Kč (8€) per night",
@@ -27,7 +27,7 @@ const Amenities = () => {
       text: "Group discounts and long stay discounts",
     },
     {
-      icon: <PiTelevisionBold size={icon_size} />,
+      icon: <TvIcon />,
       text: "Kitchen and meeting room with TV",
     },
   ];
@@ -39,9 +39,9 @@ const Amenities = () => {
         {AMENITIES_DATA.map((item, index) => (
           <div
             key={index}
-            className="flex items-center text-lg gap-2 font-semibold text-slate-600 flex-col max-w-[200px] text-center mx-auto"
+            className="flex items-center text-sm gap-2 font-semibold text-[#414141] flex-col max-w-[200px] text-center mx-auto"
           >
-            <div className="text-indigo-900">{item.icon}</div>
+            <div className="text-customblue">{item.icon}</div>
             {item.text}
           </div>
         ))}
