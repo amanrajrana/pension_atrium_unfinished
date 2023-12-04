@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Button from "./common/button";
 
 const LanguageDrop = () => {
   const dropdown = [];
@@ -29,17 +28,19 @@ const LanguageDrop = () => {
       {/* Dropdown Button */}
       <button
         onClick={toggleDropdown}
-        className="bg-dropdown rounded-lg px-3 py-3 w-full justify-between text-lg gap-2 flex items-center"
+        className="bg-dropdown rounded-lg px-3 py-3 w-full text-lg gap-2 flex items-center justify-between"
       >
-        <Image
-          width="24"
-          height="24"
-          src={selectedLanguage.flag}
-          alt="Language Flag"
-          className="rounded-full"
-        />
-        {selectedLanguage.code}
-        <MdKeyboardArrowDown />
+        <div className="flex w-max gap-2">
+          <Image
+            width={24}
+            height={24}
+            src={selectedLanguage.flag}
+            alt="Language Flag"
+            className="rounded-full aspect-square"
+          />
+          {selectedLanguage.code}
+        </div>
+        <MdKeyboardArrowDown className="text-2xl self-end" />
       </button>
 
       {/* Dropdown Options */}
