@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import ImageEffect from "./ImageEffect";
 import text from "../public/text.json";
-import Image from "next/image";
 import imgAPI from "../public/images/ImageApi";
 import Button from "./common/button";
 import { BSymbolIcon } from "./svg/icons";
+import { FaRegUser } from "react-icons/fa";
 
 const ResponsiveFloor = ({ heading, desc }) => {
   const [dropdownValue, setDropdownValue] = useState(
@@ -31,17 +31,10 @@ const ResponsiveFloor = ({ heading, desc }) => {
               1 Bed Room
             </p>
             <div className="flex items-center mt-1 ">
-              <p className="md:text-2xl text-xl  font-medium text-customblue">
+              <p className="md:text-2xl text-sm  font-medium text-customblue flex gap-1">
                 1
+                <FaRegUser size={15} />
               </p>
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                src={imgAPI.accom_vectors[10]}
-                alt="icon"
-                className="md:h-4 md:w-4 h-3 w-3"
-              />
             </div>
           </div>
 

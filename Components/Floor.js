@@ -2,12 +2,10 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import text from "../public/text.json";
-import Img from "../public/images/ImageApi";
 import Image from "next/image";
 import imgAPI from "../public/images/ImageApi";
 import ResponsiveFloor from "./ResponsiveFloor";
 import { FaRegUser } from "react-icons/fa";
-import { HiOutlinePhoto } from "react-icons/hi2";
 import { TbPhoto } from "react-icons/tb";
 import { BSymbolIcon } from "./svg/icons";
 import Button from "./common/button";
@@ -38,14 +36,12 @@ const CustomComponent = ({ heading, desc }) => {
               alt="Background"
             />
 
-            <div>
-              <a
-                href="#"
-                className="absolute bottom-3 right-3 bg-white p-2 rounded-md"
-              >
-                <TbPhoto size={24} />
-              </a>
-            </div>
+            <a
+              href="#"
+              className="absolute bottom-3 right-3 bg-white p-2 rounded-md"
+            >
+              <TbPhoto size={24} />
+            </a>
           </div>
 
           {/* Element 2: Text with Icon */}
