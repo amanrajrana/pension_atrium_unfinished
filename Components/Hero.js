@@ -24,7 +24,7 @@ const Hero = () => {
             </span>
             &#39;s Hidden Gem
           </h2>
-          <p className="text-gray-600 mb-12 text-center lg:text-left text-sm md:text-2xl">
+          <p className="text-gray-600 mb-12 text-center lg:text-left text-sm lg:text-lg">
             {text.hero_subtext}
           </p>
           <div className="grid grid-cols-2 max-w-max gap-4 mx-auto">
