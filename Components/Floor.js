@@ -9,6 +9,7 @@ import { FaRegUser } from "react-icons/fa";
 import { TbPhoto } from "react-icons/tb";
 import { BSymbolIcon } from "./svg/icons";
 import Button from "./common/button";
+import GalleryIcon from "./common/GalleryIcon";
 
 const CustomComponent = ({ heading, desc }) => {
   const [dropdownValue, setDropdownValue] = useState(
@@ -36,12 +37,7 @@ const CustomComponent = ({ heading, desc }) => {
               alt="Background"
             />
 
-            <a
-              href="#"
-              className="absolute bottom-3 right-3 bg-white p-2 rounded-md"
-            >
-              <TbPhoto size={24} />
-            </a>
+            <GalleryIcon />
           </div>
 
           {/* Element 2: Text with Icon */}
