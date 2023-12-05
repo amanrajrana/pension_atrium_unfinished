@@ -31,7 +31,7 @@ const ResponsiveFloor = ({ heading, desc }) => {
               1 Bed Room
             </p>
             <div className="flex items-center mt-1 ">
-              <p className="md:text-2xl text-sm  font-medium text-customblue flex gap-1">
+              <p className="md:text-2xl text-sm  font-medium text-customblue flex items-center gap-1">
                 1
                 <FaRegUser size={15} />
               </p>
