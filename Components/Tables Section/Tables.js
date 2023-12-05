@@ -18,10 +18,6 @@ const BorderedBox = ({ headerText, section }) => {
 const Tables = () => {
   return (
     <div className="mt-16">
-      <h1 className="md:text-2x text-2xl font-bold mb-12 text-center">
-        Our Accommodation
-      </h1>
-
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bottom-0 border rounded shadow overflow-hidden">
           <BorderedBox headerText="Room Type" section={<Rooms />} />
