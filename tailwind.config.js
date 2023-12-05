@@ -28,6 +28,10 @@ module.exports = {
         26: "4.5rem",
       },
 
+      screens: {
+        "2xl": "1840px",
+      },
+
       fontSize: {
         xl: [
           "16px",
