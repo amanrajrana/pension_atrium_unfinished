@@ -13,7 +13,7 @@ export const Section = ({ children }) => {
 
 export const ContentContainer = ({ children }) => {
   return (
-    <div className="space-y-4 w-full bg-red-400 flex-1 text-[#414141] text-sm lg:text-lg ">
+    <div className="space-y-4 w-full flex-1 text-[#414141] text-sm lg:text-lg ">
       {children}
     </div>
   );
@@ -24,10 +24,10 @@ export const ResponsiveImage = ({ image, alt }) => {
     <div className="relative w-full rounded-md overflow-clip lg:min-w-max lg:w-fit">
       <Image
         src={image}
-        height={450}
-        width={500}
+        height={400}
+        width={480}
         alt={alt || "image"}
-        className="w-full"
+        className="w-full lg:w-[480px] lg:h-[400px] object-cover"
       />
       <GalleryIcon />
     </div>
