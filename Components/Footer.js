@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-footer w-full text-white py-4 pt-16 font-urbanist">
-      <div className="max-w-screen-xl grid sm:grid-cols-2 md:grid-cols-3 lg:mx-auto mx-4 space-y-12 md:space-y-0">
+      <div className="max-w-screen-2xl font-urbanist mx-auto px-4 py-8 lg:px-10 grid sm:grid-cols-2 md:grid-cols-3 lg:mx-auto space-y-12 md:space-y-0">
         {/* First Column */}
         <div className="sm:col-span-2 md:col-span-1">
           <Image

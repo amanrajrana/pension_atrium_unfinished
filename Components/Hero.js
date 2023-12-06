@@ -13,8 +13,8 @@ const Hero = () => {
   const [checkOutDate, setCheckOutDate] = useState(null);
 
   return (
-    <section className="max-w-screen-2xl mx-auto mt-16 md:mt-20 px-4 lg:px-10">
-      <div className="grid lg:grid-cols-2 gap-y-8">
+    <section className="max-w-screen-2xl mx-auto px-4 lg:px-10">
+      <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-center">
         {/* Left side */}
         <div className="flex-1 lg:max-w-lg flex justify-center flex-col">
           <h2 className="text-2x md:text-3xl text-center lg:text-left font-bold mb-8">
@@ -71,12 +71,13 @@ const Hero = () => {
 
         {/* Right side */}
         <Image
-          width="0"
-          height="0"
+          width={600}
+          height={500}
           sizes="100vw"
           src={Img.home_vectors.card}
           alt="card"
-          className="w-full"
+          priority
+          className="object-fill lg:h-[90%] w-full"
         />
       </div>
     </section>
