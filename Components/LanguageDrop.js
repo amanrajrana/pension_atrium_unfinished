@@ -27,14 +27,18 @@ const LanguageDrop = () => {
   return (
     <div className="relative w-full">
       {/* Dropdown Button */}
-      <Button variant="customWhite" onClick={toggleDropdown}>
+      <Button
+        variant="customWhite"
+        onClick={toggleDropdown}
+        className="justify-between"
+      >
         <div className="flex gap-2 items-center h-full">
           <Image
             width={26}
             height={26}
             src={selectedLanguage.flag}
             alt="Language Flag"
-            className="rounded-full aspect-square min-w-max min-h-max object-fill lg:w-5/6 3xl:w-full h-auto "
+            className="rounded-full aspect-square min-w-max min-h-max object-fill h-auto "
           />
 
           <span className="text-sm font-bold 3xl:text-2xl">

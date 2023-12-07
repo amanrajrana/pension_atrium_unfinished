@@ -1,6 +1,7 @@
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
+import PropTypes from "prop-types";
 
 const buttonVariants = cva(
   "w-full flex justify-center items-center min-w-max py-3 px-4 rounded-lg font-urbanist text-sm font-bold 3xl:text-2xl transition duration-300 ease-in-out",
@@ -31,6 +32,10 @@ const Button = forwardRef(({ className, variant, ...props }, ref) => {
     />
   );
 });
+
+Button.propTypes = {
+  className: PropTypes.string,
+};
 
 Button.displayName = "Button";
 
