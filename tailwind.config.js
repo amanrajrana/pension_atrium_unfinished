@@ -29,7 +29,8 @@ module.exports = {
       },
 
       screens: {
-        "3xl": "1920px",
+        "3xl": "1740px",
+        "4xl": "1920px",
       },
 
       fontSize: {

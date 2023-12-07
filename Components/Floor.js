@@ -8,7 +8,7 @@ import ResponsiveFloor from "./ResponsiveFloor";
 import { FaRegUser } from "react-icons/fa";
 import { TbPhoto } from "react-icons/tb";
 import { BSymbolIcon } from "./svg/icons";
-import Button from "./common/button";
+import Button from "./common/Button";
 import GalleryIcon from "./common/GalleryIcon";
 
 const CustomComponent = ({ heading, desc }) => {
