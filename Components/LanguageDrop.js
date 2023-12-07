@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Button from "./common/Button";
+import Button from "@/Components/common/Button";
 
 const LanguageDrop = () => {
   const dropdown = [];

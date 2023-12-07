@@ -6,9 +6,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import Image from "next/image";
 import Img from "@/public/images/ImageApi";
 import text from "@/public/text.json";
-import { BSymbolIcon } from "../svg/icons";
-import { LuCalendar } from "react-icons/lu";
-import Button from "../common/Button";
+import { BSymbolIcon } from "@/Components/svg/icons";
+import Button from "@/Components/common/Button";
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState(null);
