@@ -40,7 +40,7 @@ ResponsiveImage.propTypes = {
 };
 
 export const H2 = ({ children }) => {
-  return <h2 className="text-4xlgl-custom font-bold text-black">{children}</h2>;
+  return <h2 className="text-2xl-custom font-bold text-black">{children}</h2>;
 };
 
 H2.propTypes = {

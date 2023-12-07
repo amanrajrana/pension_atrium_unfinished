@@ -66,7 +66,7 @@ const Navbar = () => {
                 : "hidden"
             } min-h-max flex-col py-8 lg:py-0 lg:z-0 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:justify-between lg:relative lg:top-auto lg:left-auto lg:bg-transparent w-full`}
           >
-            <div className="flex min-h-max h-min relative lg:flex-1 lg:top-auto flex-col gap-y-8 w-full max-w-[302px] lg:max-w-full p-4 lg:flex-row gap-x-8 2xl:text-4xlgl-custom">
+            <div className="flex min-h-max h-min relative lg:flex-1 lg:top-auto flex-col gap-y-8 w-full max-w-[302px] lg:max-w-full p-4 lg:flex-row gap-x-8 2xl:text-2xl-custom">
               {NAV__ITEMS.map(({ label, to }, index) => (
                 <Link key={index} href={to}>
                   {label}

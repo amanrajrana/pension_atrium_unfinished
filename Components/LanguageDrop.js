@@ -40,7 +40,7 @@ const LanguageDrop = () => {
           />
           {selectedLanguage.code}
         </div>
-        <MdKeyboardArrowDown className="text-4xlgl-custom self-end" />
+        <MdKeyboardArrowDown className="text-2xl-custom self-end" />
       </button>
 
       {/* Dropdown Options */}

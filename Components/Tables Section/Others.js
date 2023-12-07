@@ -6,7 +6,7 @@ const Element = ({ icon, text, subtext, text2 }) => {
   return (
     <div className="flex justify-between mt-2 mb-8">
       <div className="mr-2 flex gap-4 items-center">
-        <span className="text-customblue text-4xlgl-custom">{icon}</span>
+        <span className="text-customblue text-2xl-custom">{icon}</span>
         <div className="flex-col items-center">
           <p className="text-sm font-bold">{text}</p>
           <p className="text-sm">{subtext}</p>

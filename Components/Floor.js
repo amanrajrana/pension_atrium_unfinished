@@ -21,7 +21,7 @@ const CustomComponent = ({ heading, desc }) => {
       <div className="mb-4 hidden lg:block">
         {/* Heading and Subtext */}
         <div className="mb-4">
-          <h2 className="text-4xlgl-custom font-bold mb-6 mt-4">{heading}</h2>
+          <h2 className="text-2xl-custom font-bold mb-6 mt-4">{heading}</h2>
           <p className="text-gray-500">{desc}</p>
         </div>
 
@@ -55,12 +55,12 @@ const CustomComponent = ({ heading, desc }) => {
           {/* Element 4 and 5: Text and Subtext */}
           <div className="flex justify-between bg-opacity-50 flex-1">
             <div className="flex justify-center flex-col">
-              <p className="text-4xlgl-customg text-customblue font-bold">500 Kč</p>
+              <p className="text-2xl-customg text-customblue font-bold">500 Kč</p>
               <p className="text-gray-500 text-center mt-1">Tourist</p>
             </div>
 
             <div className="flex justify-center flex-col">
-              <p className="text-4xlgl-customg text-customblue font-bold">600 Kč</p>
+              <p className="text-2xl-customg text-customblue font-bold">600 Kč</p>
               <p className="text-gray-500 text-center mt-1">Standard</p>
             </div>
 

@@ -7,12 +7,12 @@ const Element = ({ icon1, icon2, text1, text2 }) => {
   return (
     <div className="flex justify-between mb-4 items-end">
       <div className="mr-2 flex gap-4 items-end">
-        <span className="text-customblue text-4xlgl-custom">{icon1}</span>
+        <span className="text-customblue text-2xl-custom">{icon1}</span>
         <p className="text-sm">{text1}</p>
       </div>
 
       <div className="flex gap-4 items-center">
-        <span className="text-customblue text-4xlgl-custom">{icon2}</span>
+        <span className="text-customblue text-2xl-custom">{icon2}</span>
         <p className="text-sm">{text2}</p>
       </div>
     </div>
