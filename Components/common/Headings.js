@@ -5,7 +5,7 @@ const H1 = ({ className, ...props }) => {
   return (
     <h1
       className={cn(
-        "xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold leading-normal",
+        "text-4xlg 2xl:text-4xl 3xl:text-5xl font-bold leading-normal",
         className
       )}
       {...props}

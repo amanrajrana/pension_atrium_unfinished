@@ -1,12 +1,11 @@
+import { H1 } from "@/Components/common/Headings";
 import Main from "@/Components/common/Main";
 import Surroundings from "@/Components/surroundings/Surroundings";
 
 const page = () => {
   return (
     <Main>
-      <h1 className="text-center font-bold text-4xlg lg:text-3xlg">
-        Surroundings
-      </h1>
+      <H1 className="text-center">Surroundings</H1>
       <Surroundings />
     </Main>
   );
