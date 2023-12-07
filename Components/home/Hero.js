@@ -7,7 +7,7 @@ import Image from "next/image";
 import Img from "@/public/images/ImageApi";
 import text from "@/public/text.json";
 import { BSymbolIcon } from "@/Components/svg/icons";
-import Button from "@/Components/common/Button";
+import { Button } from "@/Components/common/button";
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState(null);

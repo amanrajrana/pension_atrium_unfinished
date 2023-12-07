@@ -37,7 +37,7 @@ Button.propTypes = {
   className: PropTypes.string,
 };
 
-Button.displayName = "Button";
+Button.displayName = "button";
 
 export { Button, buttonVariants };
 export default Button;

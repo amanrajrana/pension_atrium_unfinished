@@ -7,7 +7,7 @@ import imgAPI from "@/public/images/ImageApi";
 import ResponsiveFloor from "./ResponsiveFloor";
 import { FaRegUser } from "react-icons/fa";
 import { BSymbolIcon } from "@/Components/svg/icons";
-import Button from "@/Components/common/Button";
+import Button from "@/Components/common/button";
 import GalleryIcon from "@/Components/common/GalleryIcon";
 import { H2 } from "@/Components/common/Headings";
 

@@ -1,7 +1,7 @@
 import React from "react";
 // import FooterColumn from "./FooterColumn";
 import text from "@/public/text.json";
-import Button from "@/Components/common/Button";
+import Button from "@/Components/common/button";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";

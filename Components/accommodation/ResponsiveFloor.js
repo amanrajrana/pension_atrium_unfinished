@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 import ImageEffect from "../ImageEffect";
 import text from "@/public/text.json";
 import imgAPI from "@/public/images/ImageApi";
-import Button from "@/Components/common/Button";
+import Button from "@/Components/common/button";
 import { BSymbolIcon } from "@/Components/svg/icons";
 import { FaRegUser } from "react-icons/fa";
 

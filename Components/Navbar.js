@@ -6,7 +6,7 @@ import images from "@/public/images/ImageApi.js";
 import Link from "next/link";
 import Image from "next/image";
 import LanguageDrop from "./LanguageDrop";
-import Button from "@/Components/common/Button";
+import Button from "@/Components/common/button";
 import Hamburger from "hamburger-react";
 import { BSymbolIcon } from "@/Components/svg/icons";
 import { usePathname } from "next/navigation";
