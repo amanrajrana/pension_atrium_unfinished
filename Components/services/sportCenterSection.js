@@ -70,7 +70,7 @@ const SportCenterSection = () => {
           neighborhood of our pension (map), we offer to our guests:
         </p>
 
-        <ul className="text-[21px] max-w-2xl text-lg grid sm:grid-cols-2 gap-4">
+        <ul className="text-[21px] max-w-2xl text-lg 3xl:text-2xl grid sm:grid-cols-2 gap-4">
           {GUEST_OFFER.map((item, index) => (
             <li className="flex items-center gap-x-4" key={index}>
               {item.icon}

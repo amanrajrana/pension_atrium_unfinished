@@ -1,18 +1,12 @@
 // components/SurroundingElement.js
 import Image from "next/image";
 
-const SurroundingElement = ({
-  isReverse,
-  small_img,
-  large_img,
-  heading,
-  text,
-}) => {
+const SurroundingElement = ({ isReverse, large_img, heading, text }) => {
   return (
     <div
       className={`${
         isReverse ? "flex-wrap-reverse" : "flex-wrap"
-      } p-2 md:p-10 flex gap-x-14 gap-y-4 lg:flex-nowrap`}
+      } p-2 md:p-10 flex gap-x-14 gap-y-4 lg:flex-nowrap 3xl:gap-x-28`}
     >
       {isReverse ? (
         <>
@@ -36,9 +30,10 @@ const ContainerImage = ({ image }) => {
     <Image
       src={image}
       width={573}
-      height={310}
+      height={350}
+      sizes="100vw"
       alt="img"
-      className="w-full lg:w-1/2 object-fill"
+      className="w-full lg:w-1/2 object-contain"
     />
   );
 };
