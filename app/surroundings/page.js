@@ -1,13 +1,13 @@
-import Surroundings from "@/Components/surroundingsSection/Surroundings";
+import { H1 } from "@/Components/common/Headings";
+import Main from "@/Components/common/Main";
+import Surroundings from "@/Components/surroundings/Surroundings";
 
 const page = () => {
   return (
-    <main className="font-urbanist mx-auto max-w-screen-2xl px-4 py-8 lg:px-10">
-      <h1 className="text-center font-bold text-2x lg:text-3xl">
-        Surroundings
-      </h1>
+    <Main>
+      <H1 className="text-center">Surroundings</H1>
       <Surroundings />
-    </main>
+    </Main>
   );
 };
 

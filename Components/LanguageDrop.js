@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { Button } from "@/Components/common/button";
 
 const LanguageDrop = () => {
   const dropdown = [];
@@ -26,22 +27,26 @@ const LanguageDrop = () => {
   return (
     <div className="relative w-full">
       {/* Dropdown Button */}
-      <button
+      <Button
+        variant="customWhite"
         onClick={toggleDropdown}
-        className="bg-dropdown rounded-lg px-3 py-3 w-full text-lg gap-2 flex items-center justify-between"
+        className="justify-between"
       >
-        <div className="flex w-max gap-2">
+        <div className="flex gap-2 items-center h-full">
           <Image
-            width={24}
-            height={24}
+            width={26}
+            height={26}
             src={selectedLanguage.flag}
             alt="Language Flag"
-            className="rounded-full aspect-square"
+            className="rounded-full aspect-square min-w-max min-h-max object-fill h-auto "
           />
-          {selectedLanguage.code}
+
+          <span className="text-sm font-bold 3xl:text-2xl">
+            {selectedLanguage.code}
+          </span>
         </div>
-        <MdKeyboardArrowDown className="text-2xl self-end" />
-      </button>
+        <MdKeyboardArrowDown className="text-2xl-custom self-end" />
+      </Button>
 
       {/* Dropdown Options */}
       {dropdownOpen && (
@@ -50,7 +55,7 @@ const LanguageDrop = () => {
             <div
               key={index}
               onClick={() => handleLanguageChange(languages)}
-              className="block p-3 text-lg leading-7 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 cursor-pointer"
+              className="block p-3 leading-7 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 cursor-pointer"
             >
               <div className="flex items-center gap-2">
                 <Image
@@ -58,6 +63,7 @@ const LanguageDrop = () => {
                   height={24}
                   src={languages.flag}
                   alt={`Flag for ${languages.name}`}
+                  className="rounded-full aspect-square"
                 />
                 <span>{languages.code}</span>
               </div>

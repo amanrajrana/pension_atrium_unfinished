@@ -3,7 +3,7 @@ import {
   H2,
   ResponsiveImage,
   Section,
-} from "./contentComponents.js";
+} from "./contentComponents.js.js";
 import { FaSkiing } from "react-icons/fa";
 
 const SkiSection = () => {
@@ -24,7 +24,7 @@ const SkiSection = () => {
           these resorts (map):
         </p>
 
-        <ul className="text-[21px] text-lg space-y-4">
+        <ul className="text-[21px] text-lg 3xl:text-2xl space-y-4">
           {SKI_BUS_MAP.map((text, index) => (
             <li className="flex items-center gap-x-4" key={index}>
               <FaSkiing size={32} />

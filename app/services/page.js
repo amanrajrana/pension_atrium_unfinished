@@ -1,15 +1,17 @@
-import MealSection from "@/Components/servicesSection/mealSection";
-import SkiSection from "@/Components/servicesSection/skiSection";
-import SportCenterSection from "@/Components/servicesSection/sportCenterSection";
+import { H1 } from "@/Components/common/Headings";
+import Main from "@/Components/common/Main";
+import MealSection from "@/Components/services/mealSection";
+import SkiSection from "@/Components/services/skiSection";
+import SportCenterSection from "@/Components/services/sportCenterSection";
 
 const Services = () => {
   return (
-    <main className="font-urbanist max-w-screen-2xl mx-auto px-4 py-8 mb-10 lg:px-10 space-y-20">
-      <h1 className="text-center font-bold text-3xl">Our Services</h1>
+    <Main className="space-y-20">
+      <H1 className="text-center">Our Services</H1>
       <MealSection />
       <SportCenterSection />
       <SkiSection />
-    </main>
+    </Main>
   );
 };
 

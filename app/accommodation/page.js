@@ -1,19 +1,19 @@
-import Floor from "@/Components/Floor";
-import Tables from "@/Components/Tables Section/Tables";
+import Floor from "@/Components/accommodation/Floor";
+import Tables from "@/Components/accommodation/Tables Section/Tables";
 import React from "react";
 import text from "@/public/text.json";
-import Information from "@/Components/Information";
+import Information from "@/Components/accommodation/Information";
+import Main from "@/Components/common/Main";
+import { H1 } from "@/Components/common/Headings";
 
 export default function Page() {
   return (
-    <main className="font-urbanist mx-auto max-w-screen-2xl px-4 py-8 lg:px-10">
-      <h1 className="text-center font-bold text-2x lg:text-3xl">
-        Our Accommodation
-      </h1>
+    <Main>
+      <H1 className="text-center">Our Accommodation</H1>
       <Tables />
       <Floor heading="Ground Floor" desc={text.first_floor} />
       <Floor heading="First Floor" desc={text.ground_floor} />
       <Information />
-    </main>
+    </Main>
   );
 }

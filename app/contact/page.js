@@ -1,12 +1,14 @@
-import ContactUs from "@/Components/ContactUs";
+import { H1 } from "@/Components/common/Headings";
+import Main from "@/Components/common/Main";
+import ContactUs from "@/Components/contact/ContactUs";
 
 export default function Page() {
   return (
-    <main className="font-urbanist mx-auto max-w-screen-2xl px-4 py-8 lg:px-10">
-      <h1 className="text-center font-semibold text-3xl">Contact Us</h1>
+    <Main>
+      <H1 className={"text-center"}>Contact Us</H1>
       <div className="my-16">
         <ContactUs />
       </div>
-    </main>
+    </Main>
   );
 }
