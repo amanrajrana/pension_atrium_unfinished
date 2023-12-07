@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-center">
         {/* Left side */}
         <div className="flex-1 lg:max-w-lg flex justify-center flex-col">
-          <h2 className="text-2x md:text-3xl text-center lg:text-left font-bold mb-8">
+          <h2 className="text-4xlg md:text-3xlg text-center lg:text-left font-bold mb-8">
             <span>Discover </span>
             <span className="bg-gradient-to-r from-textgrad_1 to-textgrad_2 inline-block text-transparent bg-clip-text">
               Trutnov

@@ -29,16 +29,10 @@ module.exports = {
       },
 
       screens: {
-        "2xl": "1840px",
+        "3xl": "1920px",
       },
 
       fontSize: {
-        xl: [
-          "16px",
-          {
-            lineHeight: "26px",
-          },
-        ],
         sm: [
           "17px",
           {
@@ -47,7 +41,7 @@ module.exports = {
           },
         ],
 
-        "2xl": [
+        "2xl-custom": [
           "25px",
           {
             lineHeight: "27.2px",
@@ -60,14 +54,14 @@ module.exports = {
             fontWeight: "700",
           },
         ],
-        "2x": [
+        "4xlg": [
           "36px",
           {
             lineHeight: "43.2px",
           },
         ],
         // Or with a default line-height as well
-        "3xl": [
+        "5xlg": [
           "52px",
           {
             lineHeight: "62.4px",

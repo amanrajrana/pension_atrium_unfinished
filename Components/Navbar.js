@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed w-full bg-white text-black font-semibold pt-7 p-4 lg:px-8 z-50 top-0">
-        <div className="max-w-screen-2xl w-full mx-auto flex items-center justify-between font-urbanist">
+        <div className="max-w-screen-3xl w-full mx-auto flex items-center justify-between font-urbanist">
           {/* Left side with icon */}
           <div className="flex items-center">
             <Link href="/">
@@ -52,6 +52,8 @@ const Navbar = () => {
                 alt="PENSION ATRIUM logo"
                 width={181}
                 height={55}
+                priority
+                className="cursor-pointer 2xl:w-52 object-contain 2xl:h-16"
               />
             </Link>
           </div>
@@ -64,7 +66,7 @@ const Navbar = () => {
                 : "hidden"
             } min-h-max flex-col py-8 lg:py-0 lg:z-0 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:justify-between lg:relative lg:top-auto lg:left-auto lg:bg-transparent w-full`}
           >
-            <div className="flex min-h-max h-min relative lg:flex-1 lg:top-auto flex-col gap-y-8 w-full max-w-[302px] lg:max-w-full p-4 lg:flex-row gap-x-8">
+            <div className="flex min-h-max h-min relative lg:flex-1 lg:top-auto flex-col gap-y-8 w-full max-w-[302px] lg:max-w-full p-4 lg:flex-row gap-x-8 2xl:text-4xlgl-custom">
               {NAV__ITEMS.map(({ label, to }, index) => (
                 <Link key={index} href={to}>
                   {label}
