@@ -13,7 +13,7 @@ import {
   H2,
   ResponsiveImage,
   Section,
-} from "./contentComponents.js";
+} from "./contentComponents.js.js";
 import { FaPersonRunning } from "react-icons/fa6";
 
 const SportCenterSection = () => {

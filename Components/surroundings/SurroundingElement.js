@@ -46,10 +46,12 @@ const ContainerImage = ({ image }) => {
 const ContainerText = ({ heading, text }) => {
   return (
     <div className="flex justify-center flex-col gap-2 lg:gap-y-6 w-full lg:w-1/2">
-      <h2 className="font-bold text-2xl-custom sm:text-[30px] text-center sm:text-left">
+      <h2 className="font-bold text-2xl-custom sm:text-[30px] 3xl:text-5xl text-center sm:text-left">
         {heading}
       </h2>
-      <p className="text-[#717171] text-sm sm:text-lg sm:leading-7">{text}</p>
+      <p className="text-[#717171] text-sm sm:text-lg sm:leading-7 3xl:text-2xl">
+        {text}
+      </p>
     </div>
   );
 };

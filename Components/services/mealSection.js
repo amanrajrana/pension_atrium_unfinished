@@ -5,7 +5,7 @@ import {
   H2,
   ResponsiveImage,
   Section,
-} from "./contentComponents.js";
+} from "./contentComponents.js.js";
 
 const MealSection = () => {
   const sizeOfIcon = 22;

@@ -1,13 +1,14 @@
-import Surroundings from "@/Components/surroundingsSection/Surroundings";
+import Main from "@/Components/common/Main";
+import Surroundings from "@/Components/surroundings/Surroundings";
 
 const page = () => {
   return (
-    <main className="font-urbanist mx-auto max-w-screen-2xl px-4 py-8 lg:px-10">
+    <Main>
       <h1 className="text-center font-bold text-4xlg lg:text-3xlg">
         Surroundings
       </h1>
       <Surroundings />
-    </main>
+    </Main>
   );
 };
 

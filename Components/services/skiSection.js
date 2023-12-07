@@ -3,7 +3,7 @@ import {
   H2,
   ResponsiveImage,
   Section,
-} from "./contentComponents.js";
+} from "./contentComponents.js.js";
 import { FaSkiing } from "react-icons/fa";
 
 const SkiSection = () => {
