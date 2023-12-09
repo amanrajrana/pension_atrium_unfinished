@@ -9,8 +9,8 @@ import DateInputField from "./dateInputField";
 import { useState } from "react";
 
 const Hero = () => {
-  const [checkInDate, setCheckInDate] = useState(new Date());
-  const [checkOutDate, setCheckOutDate] = useState(new Date());
+  const [checkInDate, setCheckInDate] = useState();
+  const [checkOutDate, setCheckOutDate] = useState();
 
   return (
     <section className="grid lg:grid-cols-2 gap-y-8 lg:gap-x-24 2xl:gap-x-36 3xl:gap-x-56 items-center mt-9 xl:mt-12">
