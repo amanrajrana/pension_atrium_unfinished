@@ -5,6 +5,7 @@ import Button from "@/Components/common/button";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
+import { H2 } from "../common/Headings";
 
 const ContactUs = () => {
   return (
@@ -25,9 +26,7 @@ const ContactUs = () => {
         {/* Right side with contact form */}
         <div className="flex-1 w-full lg:w-1/2 flex flex-col justify-between">
           <div className="py-10 px-8 space-y-6 border border-[#DAE4F2] rounded-lg shadow-lg">
-            <h2 className="text-[30px] 3xl:text-4xl leading-10 font-bold text-center">
-              Leave Us a Message
-            </h2>
+            <H2 className="text-center">Leave us a message</H2>
 
             <form className="grid md:grid-cols-2 text-lg lg:grid-cols-1 gap-4 3xl:gap-y-8 3xl:text-2xl">
               <div className="space-y-2">
