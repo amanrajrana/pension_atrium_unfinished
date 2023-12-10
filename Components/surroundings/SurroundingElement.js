@@ -27,14 +27,16 @@ export default SurroundingElement;
 
 const ContainerImage = ({ image }) => {
   return (
-    <Image
-      src={image}
-      width={573}
-      height={350}
-      sizes="100vw"
-      alt="img"
-      className="w-full lg:w-1/2 object-contain"
-    />
+    <div className="w-full lg:w-1/2">
+      <Image
+        src={image}
+        width={573}
+        height={350}
+        sizes="100vw"
+        alt="img"
+        className="w-full"
+      />
+    </div>
   );
 };
 
